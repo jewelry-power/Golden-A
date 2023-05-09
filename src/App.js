@@ -12,7 +12,7 @@ import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-
+import Missing from "./pages/Missing"
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Missing />} />
       </Routes>
       <Footer />
     </BrowserRouter>

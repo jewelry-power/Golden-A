@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+ # Golden Whisper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## ![Alt text](src/Golden%20image/diamond.png)Descreption:
+ Welcome to our E-commerce Project ,this is our third project 
+ in this project we made an e-commerce website ,where we applied the knowledge that we acquire
+ during this level, which was in React and hooks
+<br><br>
+ ![Alt text](src/Golden%20image/diamond.png)What is Golden Whisper :
 
-### `npm start`
+Golden Whisper is a jewelery website where you can find what you like from the latest jewelry styles and 
+fashion trends in the jewelry world from different brands ,all what you have to to do is pick your design .
+As you step inside, you are enveloped in an ambiance of sophistication and luxury. The tastefully designed interior showcases a dazzling array of sparkling gemstones, precious metals, and meticulously crafted pieces that reflect the artistry of our master jewelers.
+Our collection spans a wide range of styles, from classic and traditional designs to modern and contemporary creations. Each piece is carefully curated to cater to the diverse tastes and preferences of our esteemed clientele. From delicate necklaces adorned with radiant diamonds to ornate bracelets embellished with vibrant gemstones, every creation in our display evokes a sense of glamour and opulence.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br><br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+ # ![Alt text](src/Golden%20image/box%20(3).png) Our Jewels 
+ ![Alt text](src/Golden%20image/diamond%20(4).png) [Abd Alrahman Alzaro](https://github.com/AbdalrahmanAlzaro) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Alt text](src/Golden%20image/diamond%20(4).png)[Amer Khawalda](https://github.com/Amer-Khawalda)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Alt text](src/Golden%20image/diamond%20(4).png) [Mufid Alnadi](https://github.com/MufidAlnadi) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Alt text](src/Golden%20image/gem.png) [Tasneem ](https://github.com/Tasneemmah) 
 
-### `npm run eject`
+![Alt text](src/Golden%20image/gem.png) [Dania Abughaush ](https://github.com/daniaabughaush) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# ![Alt text](src/Golden%20image/jewelry%20(1).png) Tools That we used in this project
+### ![ react](src/Golden%20image/atom.png) React
+### ![ Figma](src/Golden%20image/figma.png) Figma
+### ![trello](src/Golden%20image/trello.png) trello
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br><br>
 
-### Code Splitting
+#  ![ ](src/Golden%20image/link%20(1).png)Important Links
+### ![ Figma](src/Golden%20image/figma.png) [ Figma Link](https://www.figma.com/file/yDONz9PkZxwrRPbjaPXob0/html.to.design-(Community)?type=design&node-id=0-1&t=wsgtqEIxLlQwAsfk-0)
+### ![trello](src/Golden%20image/trello.png) [Trello](https://trello.com/b/gTQUDA5W/jewelry-power)
+### ![Alt text](src/Golden%20image/github%20(1).png)[Jewelry Power organization](https://github.com/jewelry-power)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br><br>
+![Alt text](src/Golden%20image/gemstone.png) Jewelry Power Organization ![Alt text](src/Golden%20image/gemstone.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
