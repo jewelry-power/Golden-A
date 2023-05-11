@@ -9,13 +9,15 @@ import Chat from '../components/Chat';
 function Home() {
   return (
     <div>
-      <Carsoul />
+      <Carsoul/>
+      <CardsOnHome />
       <Product />
       <Discount />
-      <CardsOnHome />
       <Chat />
     </div>
   );
 }
 
 export default Home
+
+

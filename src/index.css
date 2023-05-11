@@ -18,12 +18,18 @@ body{
 .aa{
   height: 40rem;
   border-radius: 0;
-  margin-bottom:4rem
+  margin-bottom:38rem
 }
 .pvalidate{
   display: none
+  
 }
 .pWrong{
   display:block;
   color:red
+}
+@media all and (max-width:1100px){
+  *{
+    margin: 0;
+  }
 }

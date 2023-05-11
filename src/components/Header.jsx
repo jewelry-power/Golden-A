@@ -33,7 +33,7 @@ const Header = () => {
             className="order-2 md:order-3 flex items-center"
             id="nav-content"
           >
-            <Link
+            {/* <Link
               className="inline-block no-underline font-medium  text-2xl max-sm:text-base mr-5 "
               onClick={(e) => {
                 window.localStorage.clear();
@@ -44,8 +44,8 @@ const Header = () => {
             >
               {JSON.parse(localStorage.getItem("dataUser"))
                 ? "Logout"
-                : "Sign In"}
-            </Link>
+                : "Sign Up"}
+            </Link> */}
             <div
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer flex relative"
@@ -112,6 +112,12 @@ const Header = () => {
                   >
                     Home
                   </Link>
+                  <Link
+                    className="inline-block no-underline font-medium  md:text-sm hover:text-amber-400  py-2 px-20"
+                    to="product"
+                  >
+                    Products
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -130,12 +136,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="inline-block no-underline font-medium  md:text-sm hover:text-amber-400  py-2 px-20"
-                    to="product"
-                  >
-                    Products
-                  </Link>
+              
                 </li>
               </ul>
             </div>

@@ -1,4 +1,4 @@
-// import { Carousel } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 import React, { Component } from "react";
 import first from "../images/carsoul1.png";
 // import second from "../images/2.png";
@@ -57,6 +57,8 @@ export class Section extends Component {
           </div>
         </div>
       </div>
+
+
     );
   }
 }

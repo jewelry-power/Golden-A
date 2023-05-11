@@ -126,7 +126,7 @@ function SignUp() {
         >
           <div className="w-full h-100">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
-              sign up here
+             Sign Up Here
             </h1>
 
             <form className="mt-6" action="#" method="POST">

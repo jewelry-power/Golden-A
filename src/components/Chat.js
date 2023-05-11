@@ -2,7 +2,7 @@ import React from "react";
 
 function Chat() {
   return (
-    <div>
+    <div className="mt-[10rem]">
       <iframe
         allow="microphone;"
         width="1515"

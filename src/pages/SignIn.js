@@ -15,7 +15,7 @@ function SignIn(e) {
     e.preventDefault();
     setCheck(JSON.parse(localStorage.getItem("infoUser")));
 
-    if (localStorage.dataUser != null) {
+    if (localStorage.dataUser) {
       if (!localStorage.dataUser.includes(emailInput)) {
         alert(`seems like you dont have account ,sign up now`);
       }
@@ -47,7 +47,7 @@ function SignIn(e) {
         >
           <div className="w-full h-100">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
-              Log in to your account
+              Log in to Your Account
             </h1>
 
             <form className="mt-6" action="#" method="POST">

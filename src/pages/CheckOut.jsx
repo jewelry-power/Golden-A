@@ -5,7 +5,11 @@ import { useNavigate } from "react-router-dom";
 export default function CheckOut() {
   const { total } = useContext(CartContext);
     const navigate = useNavigate();
-  
+    const [pemail, setpEmail] = useState("pvalidate");
+    const [pcardnumber, setCardNumber] = useState("pvalidate");
+    const [pcvc, setCardCVC] = useState("pvalidate");
+    const [pholder, setholder] = useState("pvalidate");
+
   const [formData, setFormData] = useState({
     email: "",
     cardHolder: "",
@@ -15,6 +19,24 @@ export default function CheckOut() {
     billingAddress: "",
     billingZip: "",
   });
+
+  function emailValidate(string) {
+    let pattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/g;
+    return pattern.test(string);
+  }
+  function nameHolder(string) {
+    let pattern =  /^([A-Za-z]{3, })\s([A-Za-z]{3, })$/g;
+    return pattern.test(string);
+  }
+  function cardNumber(string) {
+    let pattern = /^5[1-5][0-9]{14}|^(222[1-9]|22[3-9]\\d|2[3-6]\\d{2}|27[0-1]\\d|2720)[0-9]{12}$/g;
+    return pattern.test(string);
+  }
+  function cardCVC(string) {
+    let pattern = /[0-9]{3, 4}$/g;
+    return pattern.test(string);
+  }
+
   const [formErrors, setFormErrors] = useState({});
 console.log(formData); 
 
@@ -35,10 +57,35 @@ console.log(formData);
         billingZip: "",
       });
       setFormErrors({});
-      
-    navigate("/payment-success");
+
+      if(!emailValidate(email)){
+        setpEmail("pWrong");
+
+      }
+      if(!cardNumber(formData.cardNo)){
+        setCardNumber("pWrong");
+
+      }
+      if(!cardCVC(formData.creditCVC)){
+        setCardCVC("pWrong");
+
+      }
+      if(!nameHolder(formData.cardHolder)){
+        setholder("pWrong");
+
+      }
+      if(emailValidate(email)&&cardNumber(formData.cardNo)){
+
+        navigate("/payment-success");
+      }
+
+     
        
+
+      
     }
+       
+    
   };
 
   const handleChange = (e) => {
@@ -61,6 +108,7 @@ console.log(formData);
   
 
   return (
+
     
       <div className="flex justify-center items-center h-screen">
         <div className="w-full max-w-md">
@@ -84,6 +132,8 @@ console.log(formData);
                     className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="your.email@gmail.com"
                   />
+                                  <p className={pemail}>you entered a wrong email</p>
+
                   <div className="text-red-500 text-sm mt-2">
                     {formErrors.email}
                   </div>
@@ -110,6 +160,8 @@ console.log(formData);
                     className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Your full name here"
                   />
+                                                   <p className={pholder}>enter your fullname should contain no number </p>
+ 
                   <div className="text-red-500 text-sm mt-2">
                     {formErrors.cardHolder}
                   </div>
@@ -138,6 +190,8 @@ console.log(formData);
                       className="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                       placeholder="xxxx-xxxx-xxxx-xxxx"
                     />
+                     <p className={pcardnumber}>your card number must has 14 valid digits</p>
+
                     <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                       <svg
                         className="h-4 w-4 text-gray-400"
@@ -165,6 +219,8 @@ console.log(formData);
                     className="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                     placeholder="CVC"
                   />
+                    <p className={pcvc}>your card number must has 3 digits only</p>
+
                 </div>
                 <div className="text-red-500 text-sm mt-2">
                   {formErrors.creditExpiry}

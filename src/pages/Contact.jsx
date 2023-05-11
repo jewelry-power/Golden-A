@@ -33,7 +33,7 @@ export default function Contact() {
           <div className="container mx-auto text-center text-white">
             <div className="flex items-center justify-center">
               <div className="w-full">
-                <h1 className="text-5xl font-medium mb-6">Contact with Us</h1>
+                <h1 className="text-5xl font-medium mb-6">Who we Are</h1>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Contact() {
         <section className="mb-32 text-gray-800 ">
           <div className="flex justify-center">
             <div className="text-center lg:max-w-3xl md:max-w-xl">
-              <h2 className="text-3xl font-bold mb-12 px-6">Contact details</h2>
+              <h2 className="text-3xl font-bold mb-12 px-6">Get In Touch</h2>
             </div>
           </div>
 
